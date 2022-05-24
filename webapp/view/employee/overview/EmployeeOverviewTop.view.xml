@@ -1,0 +1,23 @@
+<mvc:View 
+controllerName="sap.ui.demo.nav.controller.employee.overview.EmployeeOverviewTop"
+xmlns:ndc="sap.ndc"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+>
+<Title text="{i18n>EmployeeOverviewTop}"
+/>
+
+<VBox class="sapUiSmallMargin">
+	<ndc:BarcodeScannerButton
+			id="sampleBarcodeScannerButton"
+			scanSuccess="onScanSuccess"
+			scanFail="onScanError"
+			inputLiveUpdate="onScanLiveupdate"
+			/>
+		<HBox class="sapUiTinyMarginTop">
+			
+			<Text id="sampleBarcodeScannerResult" text="" class="sapUiTinyMarginBegin"/>
+		</HBox>
+	</VBox>
+	
+</mvc:View>

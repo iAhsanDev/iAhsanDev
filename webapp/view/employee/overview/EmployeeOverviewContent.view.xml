@@ -1,0 +1,46 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.employee.overview.EmployeeOverviewContent"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	>
+
+
+
+	
+<Panel headerText="Details"
+		class="sapUiMediumMarginBottom">
+			<List>
+			<InputListItem label="Pallet Number " class="sapUiMediumMarginBottom">
+				<Input
+					placeholder="Scan Pallet Number"/>
+				</InputListItem>
+			<InputListItem label="Destination Bin">
+					
+					<Input
+					placeholder="Scan Destination Bin"/>
+					
+
+				</InputListItem>
+			</List> 
+		</Panel>
+	
+
+<VBox>
+	
+			<FlexBox
+				alignItems="Start"
+				justifyContent="Center">
+				<Button id="confirm" text="{i18n>btncon}" press=".onConfirm" class="sapUiTinyMarginEnd"/>
+       			 <Button id="clearall" text="{i18n>btnclear}" press=".onClearall" class="sapUiTinyMarginEnd"/> 
+			</FlexBox>
+	
+
+</VBox>
+	
+	
+</mvc:View>
+<!--
+
+	  -->

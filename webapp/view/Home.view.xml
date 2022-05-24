@@ -1,0 +1,81 @@
+<mvc:View
+   controllerName="sap.ui.demo.nav.controller.Home"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:layout="sap.ui.layout">
+   <Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+         <layout:VerticalLayout class="sapUiResponsiveMargin">
+			<layout:HorizontalLayout allowWrapping="true">
+         <!-- 1st tile -->
+                  <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    header="{i18n>PutAwayTileTitle}"
+                    press=".onDisplayNotFound">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                	<ImageContent src="sap-icon://factory"/>
+                            </content>
+                        </TileContent>
+                    </tileContent>
+                </GenericTile>
+         <!-- 2nd tile -->
+                  <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    header="{i18n>PickingTileTitle}"
+                     press=".onDisplayNotFound">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                	<ImageContent src="sap-icon://product"/>
+                            </content>
+                        </TileContent>
+                    </tileContent>
+                </GenericTile>
+         <!-- 3rd tile -->
+               <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    header="{i18n>b2btransferTileTitle}"
+                    press=".onNavToEmployees">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                	<ImageContent src="sap-icon://commission-check"/>
+                            </content>
+                        </TileContent>
+                    </tileContent>
+                </GenericTile>
+          <!-- 4TH tile -->
+               <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    header="{i18n>AuditTileTitle}"
+                     press=".onDisplayNotFound">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                	<ImageContent src="sap-icon://employee-approvals"/>
+                            </content>
+                        </TileContent>
+                    </tileContent>
+                </GenericTile>
+         <!-- 5TH tile -->
+               <GenericTile
+                    class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    header="{i18n>M2HattarPTileTitle}"
+                     press=".onDisplayNotFound">
+                    <tileContent>
+                        <TileContent>
+                            <content>
+                                	<ImageContent src="sap-icon://media-forward"/>
+                            </content>
+                        </TileContent>
+                    </tileContent>
+                </GenericTile>
+			</layout:HorizontalLayout>
+		</layout:VerticalLayout>
+      <content>
+        <!-- <Button id="employeeListBtn" text="{i18n>ShowEmployeeList}" press=".onNavToEmployees" class="sapUiTinyMarginEnd"/>
+        <Button id="employeeOverviewBtn" text="{i18n>ShowEmployeeOverview}" press=".onNavToEmployeeOverview" class="sapUiTinyMarginEnd"/> -->
+      </content>
+   </Page>
+</mvc:View>
